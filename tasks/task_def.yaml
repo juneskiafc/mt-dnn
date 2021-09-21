@@ -1,0 +1,13 @@
+attention-probing:
+  data_format: PremiseAndOneHypothesis
+  enable_san: false
+  labels:
+    - contradiction
+    - neutral
+    - entailment
+  metric_meta:
+    - ACC
+    - F1
+  loss: CeCriterion
+  n_class: 3
+  task_type: Classification
